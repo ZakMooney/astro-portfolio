@@ -127,35 +127,39 @@ export default function Navbar({}) {
 
         {/* mobile */}
         <div className="md:hidden flex items-center justify-between p-4">
-          <a href="/" className="flex items-center">
-            <img
-              src="/mooney-w.svg"
-              className="h-10 drop-shadow-sm drop-shadow-blue-100/50"
-              alt="Zak Mooney Logo"
-            />
-          </a>
-
-          <button
-            onClick={toggleMobileMenu}
-            className="relative w-10 h-10 flex flex-col justify-center items-center z-10"
-            aria-label="Toggle mobile menu"
-          >
-            <span
-              className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-                isMobileMenuOpen ? "rotate-45 translate-y-1.5" : ""
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-white transition-all duration-300 my-1 ${
-                isMobileMenuOpen ? "opacity-0" : ""
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
-                isMobileMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
-              }`}
-            />
-          </button>
+          <div className="flex-1"></div>
+          <div className="flex-1">
+            <a href="/" className="flex items-center">
+              <img
+                src="/mooney-w.svg"
+                className="h-10 drop-shadow-sm drop-shadow-blue-100/50"
+                alt="Zak Mooney Logo"
+              />
+            </a>
+          </div>
+          <div className="flex-1 flex justify-end">
+            <button
+              onClick={toggleMobileMenu}
+              className="relative w-10 h-10 flex flex-col justify-center items-center z-10"
+              aria-label="Toggle mobile menu"
+            >
+              <span
+                className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+                  isMobileMenuOpen ? "rotate-45 translate-y-1.5" : ""
+                }`}
+              />
+              <span
+                className={`block w-6 h-0.5 bg-white transition-all duration-300 my-1 ${
+                  isMobileMenuOpen ? "opacity-0" : ""
+                }`}
+              />
+              <span
+                className={`block w-6 h-0.5 bg-white transition-all duration-300 ${
+                  isMobileMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
+                }`}
+              />
+            </button>
+          </div>
         </div>
 
         <div className="nav-frame">
