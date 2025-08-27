@@ -1,0 +1,32 @@
+---
+import { PanelLabel } from "../../../components/ui/PanelLabel";
+import { Panel } from "../../../components/ui/Panel";
+
+import { Image } from 'astro:assets';
+import Me from "../../../assets/images/me.jpg";
+---
+<div class="flex w-full gap-2 h-full">
+	<PanelLabel label="About Me" client:only="react" index={0}/>
+	<Panel client:only="react" panelClassName="h-full" index={1}>
+		<div class="flex flex-col md:flex-row gap-4">
+			<div class="min-w-[200px]">
+				<div class="scanlines-overlay h-[120px] w-[120px] md:h-[200px] md:w-[200px] float-left mr-4 mb-2 p-1 border border-[#38bdf8]">
+					<Image
+						src={Me}
+						alt="Its me"
+						class="multi-flicker"
+					/>
+				</div>
+				<p class="text-sm md:text-md xl:text-lg font-light opacity-90 drop-shadow-sm pb-2">
+					Hey there! I'm Zak, a tech lover with a passion for crafting user-friendly interfaces.
+				</p>
+				<p class="text-sm md:text-md xl:text-lg font-light opacity-90 drop-shadow-sm pb-2">
+					From humble hobby beginnings, I've since expanded into 8+ years of professional experience building &amp; maintaining web applications across DeFi, e-commerce, and IoT platforms.
+				</p>
+				<p class="text-sm md:text-md xl:text-lg font-light opacity-90 drop-shadow-sm pb-2">
+					I thrive in collaborative environments, with years of experience working in dynamic tech startups having helped me build the skills to handle the unique challenges and opportunities that arise in fast-paced &amp; innovative settings.
+				</p>
+			</div>
+		</div>
+	</Panel>
+</div>

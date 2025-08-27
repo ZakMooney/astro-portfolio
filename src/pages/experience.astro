@@ -1,0 +1,25 @@
+---
+import Main from "../layouts/Main.astro";
+import AllExperience from "../components/sections/experience/AllExperience.astro";
+import RoleExperience from "../components/sections/experience/RoleExperience.astro";
+import SkillExperience from "../components/sections/experience/SkillExperience.astro";
+---
+
+<Main>
+  <div class="w-full h-full overflow-y-auto overflow-x-hidden relative">
+    <div class="max-w-screen-xl h-full mx-auto">
+      <div class="flex flex-col md:flex-row m-4 gap-4">
+        <div class="flex-3 md:min-w-[400px]">
+          <RoleExperience />
+        </div>
+        <div class="flex-10">
+          <SkillExperience />
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row m-4 gap-4">
+        <AllExperience />
+      </div>
+      <div class="p-8 w-full"></div>
+    </div>
+  </div>
+</Main>

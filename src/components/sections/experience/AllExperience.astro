@@ -1,0 +1,23 @@
+---
+import { PanelLabel } from "@/components/ui/PanelLabel";
+import { Panel } from "@/components/ui/Panel";
+import { JobDetails } from '@/data/JobDetails';
+import ExperienceItem from '@/components/experience/ExperienceItem';
+---
+
+<div class="flex w-full gap-2">
+  <PanelLabel label="Experience" client:only="react" index={4}/>
+  <div class="w-full flex flex-col gap-4">
+    {JobDetails.map((job, index) => {
+      return (
+        <Panel
+          client:only="react"
+          contentClassName={`overflow-hidden!`}
+          index={5 + index}
+        >
+          <ExperienceItem jobDetails={job} key={index} />
+        </Panel>
+      )
+    })}
+  </div>
+</div>

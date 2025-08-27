@@ -1,0 +1,18 @@
+---
+import { PanelLabel } from "@/components/ui/PanelLabel";
+import { Panel } from "@/components/ui/Panel";
+import BarChart from '@/components/experience/BarChart';
+---
+
+<div class="flex w-full gap-2 h-full">
+  <PanelLabel label="Key Skills" client:only="react" index={2}/>
+  <Panel
+    client:only="react"
+    panelClassName="h-full"
+    contentClassName="h-full"
+    childrenClassName="h-full"
+    index={3}
+  >
+    <BarChart client:only="react"/>
+  </Panel>
+</div>
