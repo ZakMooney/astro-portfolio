@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --allowed-hosts=4db9b0e5de74.ngrok-free.app",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"

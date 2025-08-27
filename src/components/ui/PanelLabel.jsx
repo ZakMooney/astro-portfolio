@@ -17,7 +17,7 @@ const PanelLabelVertical = ({ label = "", index = 0 }) => {
       cornerTR={0}
       cornerBL={10}
       cornerBR={0}
-      className={`w-[20px]! md:w-[40px]!`}
+      className={`w-[24px]! md:w-[40px]!`}
       contentClassName={`p-2! h-full relative`}
       childrenClassName={`flex justify-center h-full`}
       panelClassName={`h-full`}
@@ -26,9 +26,9 @@ const PanelLabelVertical = ({ label = "", index = 0 }) => {
       variant="label"
       index={index}
     >
-      <div className="h-full relative">
+      <div className="flex justify-center h-full relative">
         <h3
-          className="text-xs md:text-sm uppercase font-heading font-extrabold pointer-events-none px-2"
+          className="text-xs md:text-sm uppercase font-heading font-extrabold pointer-events-none p-2 m-0"
           style={{
             position: "sticky",
             top: "8px",
