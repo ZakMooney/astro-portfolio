@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import "../styles/flicker.css";
 import { ClientRouter } from 'astro:transitions';
-import Layout from "../components/ui/Layout";
+import LayoutPre from "../components/ui/LayoutPre";
 ---
 
 <!doctype html>
@@ -19,9 +19,9 @@ import Layout from "../components/ui/Layout";
     <ClientRouter />
   </head>
   <body class="h-full overflow-hidden">
-    <Layout client:only="react">
+    <LayoutPre client:only="react">
       <slot />
-    </Layout>
+    </LayoutPre>
   </body>
 </html>
 

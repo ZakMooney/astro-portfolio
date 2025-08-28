@@ -1,0 +1,24 @@
+---
+import MainPre from "@/layouts/MainPre.astro";
+import Button from "@/components/ui/Button";
+---
+
+<MainPre>
+  <div class="fixed inset-0 flex items-center justify-center z-50">
+    <div class="flex flex-col justify-center items-center text-center gap-4">
+      <h1 class="text-[8rem] leading-[7rem] font-heading font-bold drop-shadow-md drop-shadow-blue-100/50">
+        404
+      </h1>
+      <h3 class="text-2xl font-heading drop-shadow-md drop-shadow-blue-100/50">
+        Oops something went wrong
+      </h3>
+      <Button
+        linkTo={'/'}
+        className="transition-all duration-200 hover:scale-105"
+        client:only="react"
+      >
+        HOME
+      </Button>
+    </div>
+  </div>
+</MainPre>
