@@ -56,7 +56,7 @@ export const TechColours = [
     classes: 'bg-gray-600/40 dark:bg-gray-600/20 border-gray-600/50 text-gray-200',
   },
   {
-    tech: 'RESTful API',
+    tech: 'REST APIs',
     classes: 'bg-green-500/40 dark:bg-green-500/20 border-green-500/50 text-green-200',
   },
   {

@@ -172,7 +172,7 @@ export const PortfolioDetails = [
     tech: [
       'React Native',
       'Expo',
-      'RESTful API',
+      'REST APIs',
       'HTML',
       'SCSS'
     ],
@@ -210,7 +210,7 @@ export const PortfolioDetails = [
     tech: [
       'React',
       'Redux',
-      'RESTful API',
+      'REST APIs',
       'HTML',
       'SCSS'
     ],

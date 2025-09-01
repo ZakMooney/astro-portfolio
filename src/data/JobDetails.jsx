@@ -11,16 +11,17 @@ export const JobDetails = [
   // },
   {
     icon: 'faCoins',
-    title: 'Frontend Developer',
+    title: 'Senior Frontend Developer',
     company: 'The Standard',
-    description: 'Next Gen DeFi Lending Protocol',
+    description: 'DeFi Lending Protocol',
     start: 'Aug 2023',
     end: 'Current',
     tasks: [
-      'Built a fully whitelabel DApp that interacts with Ethereum contracts on the Arbitrum network',
-      'Updated and expanded functionality & style of the latest version of the frontend, using a forked version of the whitelabel DApp',
-      'Worked with product and back-end teams to identify product pain points and implement a simple trading feature/solution',
-      'Rebuilt and streamlined first version of the frontend into React with a focus on reusable components',
+      'Architected production React dApp from MVP to $2 million TVL platform',
+      'Integrated with Arbitrum smart contracts via wagmi/ethers',
+      'Built white-label React dApp enabling partner deployments with custom theming and feature toggles',
+      'Optimised frontend queries with local caching of specific data to reduce TheGraph and Alchemy usage by 45%',
+      'Upgraded UI/UX of multi-step staking process to reduce manual inputs needed from users',
     ],
     tech: [
       'Web3',
@@ -29,7 +30,6 @@ export const JobDetails = [
       'React',
       'Wagmi',
       'Zustand',
-      'MUI',
       'Tailwind',
     ]
   },
@@ -38,22 +38,21 @@ export const JobDetails = [
     title: 'Frontend Developer',
     company: 'Vaultoro',
     description: 'Crypto & Precious Metal Exchange Platform',
-    start: 'Dec 2020',
+    start: 'Jun 2020',
     end: 'Aug 2023',
     tasks: [
-      'Rebuilt and streamlined entirety of old Next.js frontend into React with a focus on reusable components',
-      'Worked with product and back-end teams to identify product pain points and implement a simple trading feature/solution',
-      'Built and deployed portfolio checking iOS app using React Native & Expo',
-      'Worked with design team to create & implement company wide brand/UI changes, after rounds of in-house feedback',
-      'Built a light weight React “Simple Saving Plans” dashboard for a secondary company product',
-      'Worked with analytics & backend teams to integrate a custom in-house analytics product into our trading dashboards'
+      'Launched streamlined trading interface, replacing a multi-step process, that resolved our most common support complaint',
+      'Developed and deployed iOS portfolio tracking app (React Native/Expo)',
+      'Delivered company-wide UI rebrand with 30+ reusable React components, replacing inconsistent UI implementations',
+      'Built secondary React dashboard for automated savings product processing six-figure monthly EUR volume',
+      'Worked with analytics & backend teams to integrate a custom in-house analytics product into our trading dashboards',
     ],
     tech: [
       'React',
       'Redux',
       'React Native',
       'Expo',
-      'RESTful API',
+      'REST APIs',
       'SCSS'
     ]
   },
@@ -61,18 +60,19 @@ export const JobDetails = [
     icon: 'faUtensils',
     title: 'Frontend Developer',
     company: 'Perched',
-    description: 'Online Marketplace for Popup Chefs & Kitchens',
+    description: 'Online Marketplace for Popup Kitchens',
     start: 'Jan 2019',
     end: 'Dec 2019',
     tasks: [
-      'Lead front-end development of 3 fully responsive React dashboards (SEO optimised site, customer front, admin front)',
-      'React front-end that interacts with a Restful API using redux',
-      'Helped build a two way booking system, live messaging and other key features',
+      'Delivered 3 React applications; marketing site, customer portal and admin dashboard, supporting 100+ chefs & restaurants',
+      'Implemented real-time two way booking system with live availability updates',
+      'Built WebSocket-powered messaging system connecting chefs and kitchens',
+      'Optimized SEO implementation achieving 40% increase in organic traffic within 3 months',
     ],
     tech: [
       'React',
       'Redux',
-      'RESTful API',
+      'REST APIs',
       'HTML',
       'SCSS'
     ]
@@ -103,9 +103,9 @@ export const JobDetails = [
     end: 'Nov 2019',
     tasks: [
       'Managed support center and remotely diagnosed problems with WiFi access points & custom firmware installations',
-      'Created comprehensive internal & external support documentation',
-      'Helped update and manage AngularJS web app, following Google\'s Material specification',
-      'Designed, created, and updated responsive company website',
+      'Evolved from support to engineering role, ultimately maintaining AngularJS platform managing 10,000+ access points',
+      'Implemented GDPR compliance features across platform, ensuring regulatory compliance for EU customers',
+      'Designed and deployed responsive marketing site increasing trial signups by 20%',
     ],
     tech: [
       'AngularJS',
