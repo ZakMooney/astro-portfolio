@@ -49,7 +49,7 @@ export default function LandingScreen({ children }) {
           onClick={handleEnter}
           className="transition-all duration-200 hover:scale-105"
         >
-          ENTER
+          CONTINUE
         </Button>
       </div>
     </div>
