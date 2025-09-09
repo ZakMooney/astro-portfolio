@@ -153,7 +153,7 @@ export const PortfolioDetails = [
     thumbnail: portThumbnail,
     images: [],
     captions: [],
-    gitLink: 'https://github.com/ZakMooney/defi-tst-dapp',
+    gitLink: 'https://github.com/ZakMooney/portfolio-dashboard',
   },
   {
     tag: 'VAULT',
